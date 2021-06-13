@@ -1,0 +1,20 @@
+.news-article {
+    margin-bottom: 40px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    .news-media {
+        img {
+            width: 100%;
+            border: 1px solid #666;
+        }
+    }
+    .news-title {
+        h2 {
+            font-family: 'Poiret One', cursive;
+        }
+    }
+    .news-link {
+        color: blue;
+    }
+}

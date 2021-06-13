@@ -1,0 +1,5 @@
+const UNPROCESSABLE_ENTITY_422 = 422;
+
+module.exports = {
+    UNPROCESSABLE_ENTITY_422
+}
