@@ -13,7 +13,7 @@ export default function NewsArticle({ article }) {
 
             <div className="news-short-content">
                 <Typography variant="body2" color="textSecondary" component="p">
-                    {article.description} {article.url && <a href={article.url} target="_blank" className="news-link">[read more]</a>}
+                    {article.description} {article.url && <a href={article.url} target="_blank" className="news-link" rel="noreferrer">[read more]</a>}
                 </Typography>
             </div>
         </div>
