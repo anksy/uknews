@@ -1,5 +1,7 @@
+const BAD_REQUEST_400 = 400;
 const UNPROCESSABLE_ENTITY_422 = 422;
 
 module.exports = {
+    BAD_REQUEST_400,
     UNPROCESSABLE_ENTITY_422
 }

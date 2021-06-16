@@ -25,6 +25,6 @@ const getApplicationServerInstance = () => {
 app = getApplicationServerInstance();
 
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log("Server Running at PORT = ", process.env.PORT);
 });

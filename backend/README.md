@@ -1,9 +1,16 @@
 # News App
 
-## Getting Started 
+## Getting Started
 
 This is a sample news application which uses newsorg API to display news. It has frontend setup in Reactjs and backend in nodejs. Backend application is optional, can be plugged off simply changing the env variable *REACT_APP_API_BASEURL* of FE app.  
 
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
 ## Installation
 
@@ -12,9 +19,9 @@ This is a sample news application which uses newsorg API to display news. It has
    ```sh
    git clone https://github.com/anksy/uknews.git
    ```
-3. Jump into frontend
+3. Jump into backend
    ```
-   cd frontend
+   cd backend
    ```
 4. Install NPM packages
    ```sh
@@ -24,25 +31,13 @@ This is a sample news application which uses newsorg API to display news. It has
 
 6. Finally Run project
    ```sh
-   npm start
+   npm run server
    ```
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 
 ## Usage
 
-- Configure **frontend/.env** with vairables (**REACT_APP_API_BASEURL**, **REACT_APP_NEWSAPI**)
+- Configure **frontend/.env** with vairables (**REACT_APP_API_BASEURL**), it should point to backend app and **backend/.env** with (**NEWSAPI**).
 
 If you opt via backend then set your env var like below:
 
@@ -52,9 +47,21 @@ If you opt via backend then set your env var like below:
 *Appending **/news** into base url*
 *Double check your **HOST** and **PORT***
 
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm run server`
+
+Runs the app in the development mode.\
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+
+
 ## Contact
 
 Bhupendra Singh - bbhupendra007@gmail.com
 
 Project Link: [https://github.com/anksy/uknews](https://github.com/anksy/uknews)
+
 

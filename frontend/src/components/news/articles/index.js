@@ -1,12 +1,10 @@
 import { Typography } from '@material-ui/core';
-import { Link } from "react-router-dom";
 import "./index.scss";
 
 export default function NewsArticle({ article }) {
     return (
         <div className="news-article">
-            {article.urlToImage && <div className="news-media">
-                <img src={article.urlToImage} alt="news title" />
+            {article.urlToImage && <div className="news-media" style={{ backgroundImage: `url('${article.urlToImage}')` }}>
             </div>}
 
             <div className="news-title">
@@ -15,7 +13,7 @@ export default function NewsArticle({ article }) {
 
             <div className="news-short-content">
                 <Typography variant="body2" color="textSecondary" component="p">
-                    {article.description} <Link href={"/news"} className="news-link">[read more]</Link>
+                    {article.description} {article.url && <a href={article.url} target="_blank" className="news-link">[read more]</a>}
                 </Typography>
             </div>
         </div>

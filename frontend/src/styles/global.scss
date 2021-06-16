@@ -23,6 +23,23 @@ a {
 
 .content {
   margin: 30px 0;
+  min-height: 80vh;
+  
+  .news-wrapper {
+    width: 100%;
+  }
+
+  .e404 {
+    img{
+      width: 100%;
+    }
+    .err-msg {
+      text-align: center;
+      margin: 40px 0 0 0;
+      padding: 15px;
+      font-weight: bold;
+    }
+  }
 }
 
 /* APPLICATION MAIN CSS ENDS */

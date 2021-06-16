@@ -3,8 +3,11 @@ import { NEWSAPIKEY, BASEPATH } from "../constants";
 
 axios.interceptors.request.use(function (config) {
     config.url = BASEPATH + config.url;
-    config.headers = {
-        "X-Api-Key": NEWSAPIKEY
+
+    if (BASEPATH.includes("newsapi.org")) {
+        config.headers = {
+            "X-Api-Key": NEWSAPIKEY
+        }
     }
     return config;
 }, function (error) {
